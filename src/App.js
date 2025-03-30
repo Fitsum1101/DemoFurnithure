@@ -1,9 +1,10 @@
-import Product from "./component/Product";
-
+import HomeProduct from "./component/HomeProduct";
+import ProductList from "./component/ProductList";
 function App() {
   return (
     <div>
-      <Product />
+      <HomeProduct />
+      <ProductList />
     </div>
   );
 }
