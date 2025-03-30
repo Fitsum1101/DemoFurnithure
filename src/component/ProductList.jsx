@@ -83,30 +83,49 @@ const allProduct = [
 
 function ProductList() {
   return (
-    <div>
-      <ul className="grid grid-cols-4 gap-9 mx-16">
+    <div className="mx-16 ">
+      <div className="flex justify-between items-center my-10">
+        <h1 className=" font-bold text-4xl">Our Product</h1>
+        <div>
+          <input
+            className="border-2 rounded-lg px-2  border-stone-300 w-60  placeholder:px-2 py-1 "
+            type="text"
+            placeholder="Serach by name ..."
+          />
+        </div>
+      </div>
+      <ul className="grid lg:grid-cols-4 sm:grid-cols-2 gap-9 ">
         {allProduct.map((item) => (
           <ManItem key={item.id} item={item} />
         ))}
       </ul>
+      <button className="bg-yellow-400 flex justify-self-center py-3 px-10 text-xl rounded-3xl my-10 text-black font-bold">
+        Explaore
+      </button>
     </div>
   );
 }
 
 function ManItem({ item }) {
   return (
-    <div className="p-4 rounded-3xl space-y-2 bg-slate-200 hover:bg-slate-600  hover:scale-105 transition-all duration-300 ease-in-out  hover:text-white ">
+    <li className="p-4 cursor-pointer rounded-3xl space-y-2 bg-slate-200 hover:bg-slate-600  hover:scale-105 transition-all duration-300 ease-in-out  hover:text-white ">
       <img className="pb-2 w-56 h-56 " src={item.image} alt="item" />
       <h1 className="font-bold">{item.name}</h1>
       <p className="font-thin">{item.describtion}</p>
-      <div>
+      <div className="font-bold">
+        <span className="pr-1">Price:</span>
         <span className="pr-2">${item.price}</span>
         <span className="text-stone-400 line-through">${item.old_price}</span>
       </div>
-      <button className="bg-black py-1 px-3 rounded-3xl mt-2 text-white ">
-        Add
-      </button>
-    </div>
+      <div className="flex justify-between">
+        <button className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black font-bold ">
+          ADD
+        </button>
+        <button className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black font-bold ">
+          Detail
+        </button>
+      </div>
+    </li>
   );
 }
 export default ProductList;

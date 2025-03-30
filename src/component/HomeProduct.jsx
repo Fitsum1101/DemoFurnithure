@@ -35,7 +35,7 @@ function HomeProduct() {
             assumenda nam nulla maxime, cum modi vel maiores, aspernatur quas
             error hic quibusdam.
           </p>
-          <button className="bg-slate-800 text-white px-4 py-2   border rounded-3xl ">
+          <button className="bg-yellow-400 text-black font-bold px-4 py-2   border rounded-3xl ">
             Explore
           </button>
         </div>
@@ -77,11 +77,11 @@ export default HomeProduct;
 
 function Item({ item }) {
   return (
-    <div className="place-items-center flex flex-col font-bold py-5 hover:bg-slate-200 rounded-3xl hover:scale-105 transition-all duration-300 ease-in-out">
+    <div className="place-items-center cursor-pointer flex flex-col font-bold py-5 hover:bg-slate-200 rounded-3xl hover:scale-105 transition-all duration-300 ease-in-out">
       <img src={item.image} alt="Kruzo Chair" className="w-72 h-72 pb-8" />
       <h1>{item.name}</h1>
       <span>${item.price}</span>
-      <button className="bg-black py-1 px-3 rounded-3xl mt-2 text-white ">
+      <button className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black ">
         Add
       </button>
     </div>
