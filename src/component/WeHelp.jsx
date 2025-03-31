@@ -1,5 +1,48 @@
+import wehelp1 from "./images/img-grid-3 1.png";
+import wehelp2 from "./images/Mask group.png";
+import wehelp3 from "./images/img-grid-2 1.jpg";
+
 function WeHelp() {
-  return <div></div>;
+  return (
+    <div className="w-[1100px] m-auto mt-9">
+      <div className="grid grid-cols-2 gap-6 pt-6 ">
+        <div className="">
+          <img src={wehelp2} alt="wehelp" className="w-64" />
+          <img src={wehelp3} alt="wehelp" className="w-32" />
+          <img src={wehelp1} alt="wehelp" className="w-44" />
+        </div>
+        <div className="space-y-4">
+          <h1 className="font-bold text-2xl capitalize">
+            We help you make <br />
+            Modern Interior Design
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut
+            cum aliquid officia nobis pariatur debitis similique laborum, id
+            neque optio ratione aliquam? Aspernatur vero numquam consequuntur
+            itaque nulla officia!
+          </p>
+          <ul className="grid grid-cols-2 gap-7 mt-4 font-thin text-sm">
+            <li className="list-disc">
+              aut cum aliquid officia nobis pariatur debitis similiq
+            </li>
+            <li className="list-disc">
+              ratione aliquam? Aspernatur vero numquam consequuntur itaque nulla
+              officia!
+            </li>
+            <li className="list-disc">
+              ratione aliquam? Aspernatur vero numquam consequuntur itaque nulla
+              officia
+            </li>
+            <li className="list-disc">
+              ratione aliquam? Aspernatur vero numquam consequuntur itaque nulla
+              officia
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default WeHelp;

@@ -4,6 +4,7 @@ import NavBar from "../Ui/NavBar";
 import Footer from "../component/Footer";
 import HomeSlide from "../component/HomeSlide";
 import WhyChooseUs from "../component/WhyChooseUs";
+import WeHelp from "../component/WeHelp";
 function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ function Home() {
       <HomeSlide />
       <HomeProduct />
       <WhyChooseUs />
+      <WeHelp />
       <Footer />
       <Outlet />
     </div>
