@@ -1,5 +1,5 @@
 function ChoosenItem() {
-  return <div></div>;
+  return <div>teda</div>;
 }
 
 export default ChoosenItem;

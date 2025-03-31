@@ -6,6 +6,7 @@
 // import image6 from "./images/img-grid-3 1.png";
 // import image7 from "./images/couch.png";
 // import image8 from "./images/bedpicture.png";
+import { Link } from "react-router-dom";
 import allProduct from "../Asset/allproduct";
 import { useState } from "react";
 // const allProduct = [
@@ -168,9 +169,12 @@ function ManItem({ item, explaore }) {
         <button className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black font-bold ">
           ADD
         </button>
-        <button className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black font-bold ">
+        <Link
+          to={`/product/${item.id}`}
+          className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black font-bold "
+        >
           Detail
-        </button>
+        </Link>
       </div>
     </li>
   );

@@ -4,12 +4,21 @@ import wehelp3 from "./images/img-grid-2 1.jpg";
 
 function WeHelp() {
   return (
-    <div className="w-[1100px] m-auto mt-9">
-      <div className="grid grid-cols-2 gap-6 pt-6 ">
-        <div className="">
+    <div className="w-[1100px] m-auto my-20 ">
+      <hr />
+      <div className="grid grid-cols-2 gap-6 py-10 ">
+        <div className="relative">
           <img src={wehelp2} alt="wehelp" className="w-64" />
-          <img src={wehelp3} alt="wehelp" className="w-32" />
-          <img src={wehelp1} alt="wehelp" className="w-44" />
+          <img
+            src={wehelp3}
+            alt="wehelp"
+            className="w-32 absolute top-0 right-32"
+          />
+          <img
+            src={wehelp1}
+            alt="wehelp"
+            className="w-44 absolute top-40 left-44"
+          />
         </div>
         <div className="space-y-4">
           <h1 className="font-bold text-2xl capitalize">
