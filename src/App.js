@@ -1,27 +1,11 @@
-// import HomeProduct from "./component/HomeProduct";
-// import ProductDetail from "./component/ProductDetail";
-// import ProductList from "./component/ProductList";
-// import Footer from "./component/Footer";
-// function App() {
-//   return (
-//     <div>
-//       <HomeProduct />
-//       <ProductList />
-//       <ProductDetail />
-//       <Footer />
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CatgoresPage from "./Page/CatgoresPage";
 import Product from "./Page/Product";
 import Home from "./Page/Home";
 import Cart from "./Page/Cart";
-
+import ScrollToTop from "./component/ScrollToTop";
 import ProductDetail from "./component/ProductDetail";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,7 +30,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <RouterProvider router={router}>
+      <ScrollToTop />
+    </RouterProvider>
+  );
 }
 
 export default App;
