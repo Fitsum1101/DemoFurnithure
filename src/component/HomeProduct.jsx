@@ -24,8 +24,8 @@ const listfor = [
 ];
 function HomeProduct() {
   return (
-    <div className=" ">
-      <div className=" px-28 mt-10 grid gap-10 lg:grid-cols-4 sm:grid-cols-2 justify-items-center items-center  ">
+    <div className="w-[1100px] m-auto ">
+      <div className="  mt-10 grid gap-10 lg:grid-cols-4 sm:grid-cols-2 justify-items-center items-center  ">
         <div className="space-y-6 ">
           <h1 className="font-bold capitalize text-2xl">
             crafted with excellent material.
@@ -42,32 +42,6 @@ function HomeProduct() {
         {listfor.map((item) => (
           <Item key={item.id} item={item} />
         ))}
-
-        {/* <div className="place-items-center flex flex-col font-bold py-5 hover:bg-slate-200 rounded-3xl hover:scale-105 transition-all duration-300 ease-in-out">
-          <img src={image2} alt="Kruzo Chair" className="w-72 h-72 pb-8" />
-          <h1>Nordic Chair</h1>
-          <span>$75.00</span>
-          <button className="bg-black py-1 px-3 rounded-3xl mt-2 text-white ">
-            Add
-          </button>
-        </div> */}
-
-        {/* <div className="place-items-center font-bold  py-5 hover:bg-slate-200 rounded-3xl hover:scale-105 flex flex-col transition-all duration-300 ease-in-out">
-          <img src={image1} alt="Ergonomic Chair" className="w-72 h-72 pb-8" />
-          <h1>Kruzo Aero Chair</h1>
-          <span>$120.00</span>
-          <button className="bg-black py-1 px-3 rounded-3xl mt-2 text-white ">
-            Add
-          </button>
-        </div>
-        <div className="place-items-center font-bold py-5 hover:bg-slate-200 rounded-3xl hover:scale-105 flex flex-col transition-all duration-300 ease-in-out">
-          <img src={image3} alt=" Nordic Chair" className="w-72 h-72 pb-8" />
-          <h1>Ergonomic Chair</h1>
-          <span>$150.00</span>
-          <button className="bg-black py-1 px-3 rounded-3xl mt-2 text-white ">
-            Add
-          </button>
-        </div>  */}
       </div>
     </div>
   );
