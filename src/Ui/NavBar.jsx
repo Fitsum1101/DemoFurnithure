@@ -34,6 +34,7 @@
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,6 +89,16 @@ function NavBar() {
             </li>
             <li className="py-2 md:py-0">
               <Link to="/catgores">Catgores</Link>
+            </li>
+            <li>
+              <div className="flex relative items-center">
+                <input
+                  type="text"
+                  placeholder="search here ..."
+                  className="border-2 text-black rounded-lg px-4 border-stone-300 w-full sm:w-60 py-2 text-sm"
+                />
+                <FaSearch className="w-7 h-7 text-stone-500 absolute right-1 top-2 " />
+              </div>
             </li>
             <li className="py-2 md:py-0">
               <Link to="/cart">
