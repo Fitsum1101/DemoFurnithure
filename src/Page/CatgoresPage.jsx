@@ -6,7 +6,7 @@ function CatgoresPage() {
   return (
     <div>
       <NavBar />
-      catagori
+      <div className="pt-16">catagori</div>
       <Footer />
       <Outlet />
     </div>

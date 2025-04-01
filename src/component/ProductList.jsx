@@ -128,7 +128,7 @@ function ProductList() {
   }
   return (
     <div className="w-[1100px] m-auto ">
-      <div className="flex justify-between items-center my-10">
+      <div className="flex justify-between items-center pt-24 mb-10 ">
         <h1 className=" font-bold text-4xl">Our Product</h1>
         <div>
           <input
@@ -138,7 +138,7 @@ function ProductList() {
           />
         </div>
       </div>
-      <ul className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 ">
+      <ul className="grid lg:grid-cols-4 sm:grid-cols-2 gap-7 ">
         {allProduct.map((item) => (
           <ManItem key={item.id} item={item} explaore={explaore} />
         ))}

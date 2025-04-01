@@ -7,7 +7,7 @@ function Cart() {
     <div>
       <NavBar />
       <Outlet />
-      <h1>item sell</h1>
+      <h1 className="pt-16">item sell</h1>
       <Footer />
     </div>
   );

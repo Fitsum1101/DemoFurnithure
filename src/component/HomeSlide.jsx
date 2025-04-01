@@ -2,7 +2,7 @@ import heroImage from "./images/couch.png";
 
 function HomeSlide() {
   return (
-    <div className="w-full">
+    <div className="w-full pt-16">
       <div className="h-[75vh] bg-[#457b66]">
         <div className="   w-[972px]  m-auto gap-4  flex justify-around">
           <div className="text-white flex gap-2 -translate-x-0  flex-col self-center basis-[35rem]">

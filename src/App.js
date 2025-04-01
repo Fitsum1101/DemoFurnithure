@@ -3,9 +3,8 @@ import CatgoresPage from "./Page/CatgoresPage";
 import Product from "./Page/Product";
 import Home from "./Page/Home";
 import Cart from "./Page/Cart";
-import ScrollToTop from "./component/ScrollToTop";
-import ProductDetail from "./component/ProductDetail";
 
+import ProductDetail from "./component/ProductDetail";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,9 +30,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router}>
-      <ScrollToTop />
-    </RouterProvider>
+    <>
+      <RouterProvider router={router} />;
+    </>
   );
 }
 
