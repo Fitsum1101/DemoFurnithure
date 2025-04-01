@@ -47,7 +47,6 @@ const allProduct = [
     id: 5,
     name: "Couch",
     image: image5,
-
     price: 300.0,
     old_price: 350.0,
     describtion:
