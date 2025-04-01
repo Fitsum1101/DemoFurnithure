@@ -133,7 +133,6 @@ function Footer() {
     <div className="w-full px-4 sm:px-6 md:max-w-[1100px] mx-auto">
       <hr className="my-4" />
 
-      {/* Newsletter Section */}
       <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mb-8">
         <div className="w-full sm:w-auto">
           <div className="flex items-center space-x-1">
@@ -157,7 +156,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Sofa Image - Hidden on mobile, visible on sm+ */}
         <div className="hidden sm:block basis-[25rem]">
           <img className="w-full" src={footerimg} alt="footer" />
         </div>
@@ -167,9 +165,7 @@ function Footer() {
         Furni.
       </h1>
 
-      {/* Links Grid - Now using grid for all list items */}
       <div className="grid grid-cols-1  justify-items-center sm:grid-cols-2 md:grid-cols-6 gap-6 text-[#989898] my-4">
-        {/* Description - spans full width on mobile, 2 columns on sm+, 2 columns on md+ */}
         <div className="sm:col-span-2 md:col-span-2 space-y-4">
           <p className="text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis
@@ -179,7 +175,6 @@ function Footer() {
           </p>
         </div>
 
-        {/* Links Group 1 - Home, Collections, etc. */}
         <div className="grid gap-2">
           <Link className="hover:text-[#333] duration-150" to="/">
             Home
