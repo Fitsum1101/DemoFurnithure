@@ -40,8 +40,8 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
-      <div className="flex  justify-between items-center bg-[#457b66] text-white fixed w-full z-10 opacity-95 p-4 md:py-4">
+    <div className="w-[1262] m-auto">
+      <div className="flex lg:px-24  justify-between items-center bg-[#457b66] text-white fixed w-full z-10 opacity-95 p-4 md:py-4">
         <div className="text-2xl font-bold md:mr-auto">FURNI.</div>
 
         <div className="md:hidden">
@@ -97,7 +97,9 @@ function NavBar() {
                   placeholder="search here ..."
                   className="border-2 text-black rounded-lg px-4 border-stone-300 w-full sm:w-60 py-2 text-sm"
                 />
-                <FaSearch className="w-7 h-7 text-stone-500 absolute right-1 top-2 " />
+                <button>
+                  <FaSearch className="w-7 h-7 rounded-md text-stone-500 absolute right-1 top-2 " />
+                </button>
               </div>
             </li>
             <li className="py-2 md:py-0">
