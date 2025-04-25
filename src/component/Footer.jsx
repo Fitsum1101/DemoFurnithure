@@ -155,7 +155,6 @@ function Footer() {
             </button>
           </div>
         </div>
-
         <div className="hidden sm:block basis-[25rem]">
           <img className="w-full" src={footerimg} alt="footer" />
         </div>
@@ -165,13 +164,15 @@ function Footer() {
         Furni.
       </h1>
 
-      <div className="grid grid-cols-1  justify-items-center sm:grid-cols-2 md:grid-cols-6 gap-6 text-[#989898] my-4">
-        <div className="sm:col-span-2 md:col-span-2 space-y-4">
+      <div className="grid grid-cols-3   justify-items-center  md:grid-cols-6 gap-6 text-[#989898] my-4">
+        <div className="sm:col-span-2 col-span-3 md:col-span-2 space-y-4">
           <p className="text-sm">
-          best furniture transform house into kind of place that feels distictively Ours. With thoughtfully selected furniture, every moment spent at home becomes even more delightful. We furni provide you the best Design,Quality and Affordability all in one.when we say "the place is yours, the design is ours " you will get family like support in design to  deliver your imagination into product you wish to have. Furni is the right place to all your furniture need from Home to Office explore our timeless collection to find yours.
+            Best furniture transform house into kind of place that feels
+            distictively Ours. With thoughtfully selected furniture, every
+            moment spent at home becomes even more delightful. We furni provide
+            you the best Design,Quality and Affordability all in one.
           </p>
         </div>
-
         <div className="grid gap-2">
           <Link className="hover:text-[#333] duration-150" to="/">
             Home
@@ -181,7 +182,6 @@ function Footer() {
           <Link className="hover:text-[#333] duration-150">About Us</Link>
           <Link className="hover:text-[#333] duration-150">Contact</Link>
         </div>
-
         {/* Links Group 2 - Living Room, Bedroom, etc. */}
         <div className="grid gap-2">
           <Link className="hover:text-[#333] duration-150">Living Room</Link>

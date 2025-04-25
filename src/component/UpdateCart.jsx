@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { increaseQuantity, decreaseQuantity } from "../Page/CartSlice";
+import { increaseQuantity, decreaseQuantity } from "../store/cart";
 function UpdateCart({ id, currentQuantity }) {
   const dispatch = useDispatch();
   return (

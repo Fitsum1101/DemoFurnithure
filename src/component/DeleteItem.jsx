@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deleteItem } from "../Page/CartSlice";
+import { deleteItem } from "../store/cart";
 
 function DeleteItem({ id }) {
   const dispatch = useDispatch();

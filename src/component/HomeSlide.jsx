@@ -68,7 +68,8 @@ function HomeSlide() {
                 className="h-full max-h-[60vh] lg:max-h-[70vh] w-auto object-cover"
                 src={heroImage}
                 alt="Modern furniture"
-              />
+
+              />  
             </div>
           </div>
         </div>

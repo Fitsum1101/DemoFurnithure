@@ -184,6 +184,8 @@
 import { Link } from "react-router-dom";
 import allProduct from "../Asset/allproduct";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addItem } from "../store/cart";
 
 function ProductList() {
   const [explore, setExplore] = useState(true);
@@ -205,12 +207,12 @@ function ProductList() {
     : filteredProducts;
 
   return (
-    <div className="w-full px-4 sm:px-6 md:max-w-[1100px] mx-auto">
+    <div className="w-full px-4 pt-8 sm:px-6 md:max-w-[1100px] mx-auto">
       <div className="flex flex-col sm:flex-row justify-between items-center pt-12 sm:pt-24 mb-8 sm:mb-10 gap-4 sm:gap-0">
         <h1 className="font-bold text-3xl sm:text-4xl">Our Products</h1>
         <div>
           <input
-            className="border-2 rounded-lg px-4 border-stone-300 w-full sm:w-60 py-2 text-sm"
+            className="border-2 rounded-lg px-4 focus:outline-none focus:border-blue-300 focus:ring-1 focus:ring-blue-300 w-full sm:w-60 py-2 text-sm"
             type="text"
             placeholder="Search by name..."
             value={searchTerm}
@@ -248,8 +250,9 @@ function ProductList() {
 }
 
 function ManItem({ item }) {
+  const dispatch = useDispatch();
   return (
-    <li className="p-4 cursor-pointer rounded-3xl space-y-2 bg-slate-200 hover:bg-slate-600 hover:scale-105 transition-all duration-300 ease-in-out hover:text-white">
+    <li className="p-4 cursor-pointer rounded-3xl space-y-2 mx-10 sm:mx-0 md:mx-o hover:bg-slate-200 hover:scale-105 transition-all duration-300 ease-in-out hover:text-slate-600">
       <div className="flex justify-center">
         <img
           className="w-full max-w-[200px] h-auto aspect-square object-contain"
@@ -265,7 +268,10 @@ function ManItem({ item }) {
         <span className="text-stone-400 line-through">${item.old_price}</span>
       </div>
       <div className="flex justify-between gap-2">
-        <button className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black font-bold hover:bg-yellow-500 w-full">
+        <button
+          onClick={() => dispatch(addItem(item))}
+          className="bg-yellow-400 py-1 px-3 rounded-3xl mt-2 text-black font-bold hover:bg-yellow-500 w-full"
+        >
           ADD
         </button>
         <Link

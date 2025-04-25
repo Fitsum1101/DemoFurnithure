@@ -1,7 +1,5 @@
 import star_icon from "./images/star_icon.png";
 import dual_star_icon from "./images/star_dull_icon.png";
-import NavBar from "../Ui/NavBar";
-import Footer from "./Footer";
 import allProduct from "../Asset/allproduct";
 import { useParams } from "react-router-dom";
 function ProductDetail() {
@@ -11,7 +9,6 @@ function ProductDetail() {
   console.log(item.name);
   return (
     <div>
-      <NavBar />
       <div className=" mx-28 py-10 pt-24 ">
         <div className="grid sm:grid-cols-2 gap-10">
           <div className="flex  p-4">
@@ -78,7 +75,6 @@ function ProductDetail() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
