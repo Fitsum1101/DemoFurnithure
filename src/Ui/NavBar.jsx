@@ -35,10 +35,12 @@ import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { useSelector } from "react-redux";
+import { getCart, getTotalQuantity } from "../store/cart";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const cart = useSelector((state) => getTotalQuantity(state));
   return (
     <div className="w-[1262] m-auto">
       <div className="flex lg:px-24  justify-between items-center bg-[#457b66] text-white fixed w-full z-10 opacity-95 p-4 md:py-4">
@@ -96,18 +98,23 @@ function NavBar() {
               <div className="flex relative items-center">
                 <input
                   type="text"
-                  placeholder="search here ..."
-                  className="border-2 text-black rounded-lg px-4 border-stone-300 w-full sm:w-60 py-2 text-sm"
+                  class="w-full px-5 py-1 text-gray-700 bg-gray-100 border-2  rounded-lg focus:outline-none focus:border-blue-300 focus:ring-1 focus:ring-blue-300"
+                  placeholder="search here..."
                 />
                 <button>
-                  <FaSearch className="w-7 h-7 rounded-md text-stone-500 absolute right-1 top-2 " />
+                  <FaSearch className="w-5 h-5 rounded-md text-stone-500 absolute right-2 top-2 " />
                 </button>
               </div>
             </li>
-            <li className="py-2 md:py-0">
+            <li className="py-2 relative md:py-0">
               <Link to="/cart">
-                <FaCartShopping className="w-8 h-8" />
+                <FaCartShopping className="w-6 h-6" />
               </Link>
+              {cart !==0 && (
+                <span className="w-6 h-6 text-black text-center  absolute rounded-full bottom-3 bg-yellow-300 left-5">
+                  {cart}
+                </span>
+              )}
             </li>
           </ul>
         </div>
