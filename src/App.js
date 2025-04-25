@@ -1,37 +1,21 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import CatgoresPage from "./Page/CatgoresPage";
+import { Route, Routes } from "react-router-dom";
 import Product from "./Page/Product";
 import Home from "./Page/Home";
 import Cart from "./Page/Cart";
-
+import RootLayoute from "./component/Layout/Root";
 import ProductDetail from "./component/ProductDetail";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/product",
-    element: <Product />,
-  },
-  {
-    path: "/product/:id",
-    element: <ProductDetail />,
-  },
-  {
-    path: "/catgores",
-    element: <CatgoresPage />,
-  },
-  {
-    path: "/cart",
-    element: <Cart />,
-  },
-]);
 
 function App() {
   return (
     <>
-      <RouterProvider router={router} />;
+      <Routes>
+        <Route path="/" element={<RootLayoute />}>
+          <Route index="true" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+        </Route>
+      </Routes>
     </>
   );
 }
