@@ -4,22 +4,25 @@ const TestimonialSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      header: "Best financial decision ever!",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus id alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.",
+      header: "Best quality with comfort ever!",
+      text: "I couldn't be happier with my recent furniture purchase from FURNI! I was looking for something modern but inviting to update my living room, and their site made the whole experience simple and fun. The sofa I purchased is not only incredibly stylish, but the fabric and build quality were far superior to what I expected. It has just the right balance of firm support and cozy comfort. And the price was very reasonable—truthfully, I thought I'd have to spend much more to get this kind of design. I've received so many compliments from guests. FURNI has gained a customer for life!",
       photo: pop,
       name: "Aarav Lynn",
       location: "San Francisco, USA",
     },
     {
-      header: "The last step to becoming a complete minimalist",
-      text: "Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo deserunt exercitationem deleniti.",
+      header: "Trustworthy Quality bent with Nature",
+      text: "Buying furniture online always made me nervous, but FURNI changed that completely. I purchased a full bedroom set, and every piece arrived just as beautiful as shown on the website. What really impressed me was the attention to ergonomic design—the bed frame and chairs are comfortable and thoughtfully built, for better sleep and more relaxing evenings. The finishes feel premium, the wood is sturdy, and the look? Absolutely elegant but practical. And all this came at a price I could actually afford. I’m honestly proud to have FURNI pieces in my home. Highly recommended!"
+,
       photo: pop,
       name: "Miyah Miles",
       location: "London, UK",
     },
     {
-      header: "Finally free from old-school banks",
-      text: "Debitis, nihil sit minus suscipit magni aperiam vel tenetur incidunt commodi architecto numquam omnis nulla autem, necessitatibus blanditiis modi similique quidem. Odio aliquam culpa dicta beatae quod maiores ipsa minus consequatur error sunt, deleniti saepe aliquid quos inventore sequi. Necessitatibus id alias reiciendis, perferendis facere.",
+      header: "Ergonomic Design That Powers Our Workdays",
+      text:"Our startup needed functional and sleek furniture for our small office, and we’re so glad we found FURNI. From the moment we placed the order, the service was professional and helpful. We went with modern desks and ergonomic chairs, and let me tell you—they are a game-changer. The design is clean and professional, perfect for a creative workspace. But more than that, the ergonomics have truly boosted our productivity—no more backaches by midday! Everything looks polished and premium, but the pricing stayed within our tight budget. FURNI helped us create a space that reflects our brand and keeps our team comfortable. Couldn't ask for more Thanks!"
+
+,
       photo: pop,
       name: "Francisco Gomes",
       location: "Lisbon, Portugal",

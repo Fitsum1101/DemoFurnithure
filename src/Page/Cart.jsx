@@ -1,13 +1,14 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../Ui/NavBar";
 import Footer from "../component/Footer";
+import CartItem from "./CartItem";
 
 function Cart() {
   return (
     <div>
       <NavBar />
       <Outlet />
-      <h1 className="pt-16">item sell</h1>
+      <CartItem />
       <Footer />
     </div>
   );

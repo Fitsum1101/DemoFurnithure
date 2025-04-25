@@ -86,26 +86,24 @@ function WeHelp() {
             We help you make Modern Interior Design
           </h1>
           <p className="mx-auto md:mx-0 max-w-[500px] md:max-w-none">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut
-            cum aliquid officia nobis pariatur debitis similique laborum, id
-            neque optio ratione aliquam? Aspernatur vero numquam consequuntur
-            itaque nulla officia!
+          At FURNI, we believe furniture isn’t just functional—it’s reflection of your standard. That’s why we 
+           blend modern design, 
+            lasting comfort, and affordable quality to help you turn your space into a reflection of you. Whether 
+             you're revamping your home or furnishing a new office, our curated collections are made to enhance 
+              your lifestyle and uplift your everyday moments.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 font-thin text-sm">
             <li className="list-disc list-inside">
-              aut cum aliquid officia nobis pariatur debitis similiq
+            Elegant, modern designs that suit every space
             </li>
             <li className="list-disc list-inside">
-              ratione aliquam? Aspernatur vero numquam consequuntur itaque nulla
-              officia!
+             Carefully crafted for long-lasting comfort and durability
             </li>
             <li className="list-disc list-inside">
-              ratione aliquam? Aspernatur vero numquam consequuntur itaque nulla
-              officia
+            Smart, ergonomic furniture for better posture and productivity
             </li>
             <li className="list-disc list-inside">
-              ratione aliquam? Aspernatur vero numquam consequuntur itaque nulla
-              officia
+            Affordable luxury—high style without the high cost
             </li>
           </ul>
         </div>

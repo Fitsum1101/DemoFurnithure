@@ -56,9 +56,7 @@ function HomeSlide() {
                 modern living
               </h1>
               <p className="italic text-gray-300 text-base sm:text-base md:text-lg lg:text-lg">
-                A curated selection of furniture and decor that bridges the gap
-                between classic design and contemporary lifestyles. Explore our
-                collection
+              Discover beautifully crafted furniture that blends heritage design with modern-day function. At FURNI, we believe your space should reflect your story—elegant, comfortable, and uniquely you.Start your journey to a more inspiring home today.
               </p>
               <button className="duration-500 text-base sm:text-lg md:text-xl lg:text-xl font-bold flex items-center justify-center px-4 sm:px-5 md:px-6 lg:px-6 py-2 mt-2 text-[#333] bg-[#F9BF29] hover:bg-[#F9BF29]/80 rounded-[3rem] border">
                 Explore

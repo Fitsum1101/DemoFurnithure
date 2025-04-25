@@ -168,10 +168,7 @@ function Footer() {
       <div className="grid grid-cols-1  justify-items-center sm:grid-cols-2 md:grid-cols-6 gap-6 text-[#989898] my-4">
         <div className="sm:col-span-2 md:col-span-2 space-y-4">
           <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis
-            nobis odio, recusandae cupiditate earum amet odit maiores aliquid
-            quas! Eum exercitationem possimus quod cupiditate sunt et nobis
-            eligendi ex.
+          best furniture transform house into kind of place that feels distictively Ours. With thoughtfully selected furniture, every moment spent at home becomes even more delightful. We furni provide you the best Design,Quality and Affordability all in one.when we say "the place is yours, the design is ours " you will get family like support in design to  deliver your imagination into product you wish to have. Furni is the right place to all your furniture need from Home to Office explore our timeless collection to find yours.
           </p>
         </div>
 
@@ -204,7 +201,7 @@ function Footer() {
       {/* Social Icons */}
       <div className="flex justify-center sm:justify-start gap-6 my-8">
         <FaFacebook className="text-2xl cursor-pointer duration-200 hover:text-[#35736E] text-[#333]" />
-        <FaInstagram className="text-2xl duration-200 hover:text-[#457b66] cursor-pointer text-[#333]" />
+        <FaInstagram className="text-2xl duration-200 hover:text-[#1c7553] cursor-pointer text-[#333]" />
         <FaTwitter className="text-2xl duration-200 hover:text-[#457b66] cursor-pointer text-[#333]" />
         <FaLinkedin className="text-2xl duration-200 hover:text-[#457b66] cursor-pointer text-[#333]" />
       </div>

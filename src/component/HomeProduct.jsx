@@ -97,9 +97,7 @@ function HomeProduct() {
             crafted with excellent material.
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            assumenda nam nulla maxime, cum modi vel maiores, aspernatur quas
-            error hic quibusdam.
+          At FURNI, every chair we craft tells a story of comfort, precision, and timeless elegance. From the living room to the home office, our seating is designed not just to look beautiful, but to feel right every time you sit down. Made with high-quality materials and stylish finishes.
           </p>
           <button className="bg-yellow-400 text-black font-bold px-4 py-2 border rounded-3xl">
             Explore

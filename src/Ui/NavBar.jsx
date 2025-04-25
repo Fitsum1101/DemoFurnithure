@@ -42,7 +42,9 @@ function NavBar() {
   return (
     <div className="w-[1262] m-auto">
       <div className="flex lg:px-24  justify-between items-center bg-[#457b66] text-white fixed w-full z-10 opacity-95 p-4 md:py-4">
-        <div className="text-2xl font-bold md:mr-auto">FURNI.</div>
+        <Link to="/" className="text-2xl font-bold md:mr-auto">
+          FURNI.
+        </Link>
 
         <div className="md:hidden">
           <button
