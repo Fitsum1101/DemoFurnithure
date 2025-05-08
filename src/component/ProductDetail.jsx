@@ -1,12 +1,13 @@
 import star_icon from "./images/star_icon.png";
 import dual_star_icon from "./images/star_dull_icon.png";
 import allProduct from "../Asset/allproduct";
+import { addItem } from "../store/cart";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
 function ProductDetail() {
   const { id } = useParams();
   const item = allProduct.find((item) => item.id === Number(id));
-  console.log(item);
-  console.log(item.name);
+  const dispatch = useDispatch();
   return (
     <div>
       <div className=" mx-28 py-10 pt-24 ">
@@ -67,7 +68,10 @@ function ProductDetail() {
             </div>
             <div>
               <div className="mt-8">
-                <button className="bg-yellow-400 text-black font-bold px-4 py-2   border rounded-3xl">
+                <button
+                  onClick={() => dispatch(addItem(item))}
+                  className="bg-yellow-400 text-black font-bold px-4 py-2   border rounded-3xl"
+                >
                   ADD TO CART
                 </button>
               </div>

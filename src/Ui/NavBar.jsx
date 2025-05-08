@@ -91,9 +91,6 @@ function NavBar() {
             <li className="py-2 md:py-0">
               <Link to="/product">Product</Link>
             </li>
-            <li className="py-2 md:py-0">
-              <Link to="/catgores">Catgores</Link>
-            </li>
             <li>
               <div className="flex relative items-center">
                 <input
@@ -110,7 +107,7 @@ function NavBar() {
               <Link to="/cart">
                 <FaCartShopping className="w-6 h-6" />
               </Link>
-              {cart !==0 && (
+              {cart !== 0 && (
                 <span className="w-6 h-6 text-black text-center  absolute rounded-full bottom-3 bg-yellow-300 left-5">
                   {cart}
                 </span>
