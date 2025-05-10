@@ -10,7 +10,7 @@ function ProductDetail() {
   const dispatch = useDispatch();
   return (
     <div>
-      <div className=" mx-28 py-10 pt-24 ">
+      <div className="mx-2  md:mx-28  py-10 pt-24 ">
         <div className="grid sm:grid-cols-2 gap-10">
           <div className="flex  p-4">
             <div className="flex flex-col gap-4 ">
