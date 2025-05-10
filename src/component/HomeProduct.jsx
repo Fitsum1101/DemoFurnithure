@@ -3,6 +3,7 @@ import image1 from "./images/nordic char.png";
 import image3 from "./images/Ergonomic chair.png";
 import { addItem } from "../store/cart";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 const listfor = [
   {
@@ -29,7 +30,6 @@ function HomeProduct() {
   return (
     <div className="w-full px-4 sm:px-6 md:max-w-[1100px] m-auto">
       <div className="mt-10 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center items-center">
-        {/* Text section - always visible */}
         <div className="space-y-6 md:col-span-1 lg:col-span-1">
           <h1 className="font-bold capitalize text-2xl">
             crafted with excellent material.
@@ -41,9 +41,12 @@ function HomeProduct() {
             every time you sit down. Made with high-quality materials and
             stylish finishes.
           </p>
-          <button className="bg-yellow-400 text-black font-bold px-4 py-2 border rounded-3xl">
+          <Link
+            to="/product"
+            className="bg-yellow-400 mt-1 justify-self-start block text-black font-bold px-4 py-2 border rounded-3xl"
+          >
             Explore
-          </button>
+          </Link>
         </div>
 
         {/* Products - hidden on small screens, visible on md+ */}
