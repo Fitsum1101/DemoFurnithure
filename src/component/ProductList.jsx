@@ -25,8 +25,8 @@ function ProductList() {
 
   return (
     <div className="w-full px-4 pt-8 sm:px-6 md:max-w-[1100px] mx-auto">
-      <div className="flex flex-col sm:flex-row justify-between items-center pt-12 sm:pt-24 mb-8 sm:mb-10 gap-4 sm:gap-0">
-        <h1 className="font-bold text-3xl sm:text-4xl">Our Products</h1>
+      <div className="flex  justify-between items-center pt-12 sm:pt-24 mb-8 sm:mb-10 gap-4 sm:gap-0">
+        <h1 className="font-extrabold sm:font-bold text-1xl sm:text-4xl">Our Products</h1>
         <div>
           <input
             className="border-2 rounded-lg px-4 focus:outline-none focus:border-blue-300 focus:ring-1 focus:ring-blue-300 w-full sm:w-60 py-2 text-sm"
