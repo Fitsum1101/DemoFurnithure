@@ -17,9 +17,6 @@ const Cart = () => {
             })}
           </ul>
           <div className="mt-6 space-x-2">
-            <button to="/order/new" type="primary">
-              Order
-            </button>
             <button type="secondary" onClick={() => dispatch(clearCart())}>
               Clear cart
             </button>
